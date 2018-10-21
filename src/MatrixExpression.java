@@ -17,8 +17,6 @@ public interface MatrixExpression {
         return new Matrix(array);
     }
 
-
-
     /**
      *
      * @return true if the expression is the multiplicative identity
