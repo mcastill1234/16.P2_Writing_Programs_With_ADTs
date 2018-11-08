@@ -35,4 +35,24 @@ class Matrix implements MatrixExpression {
     public MatrixExpression optimize() {
         return this;
     }
+
+    @Override
+    public String toString() {
+        String MatrixString = "[ ";
+
+        for (int row = 0; row < array.length; row++) {
+            MatrixString += "[";
+            for (int col = 0; col < array[row].length; col++) {
+                if (col == array[row].length-1) {
+                    MatrixString += String.valueOf(array[row][col]);
+                } else {
+                    MatrixString += String.valueOf(array[row][col]) + " ";
+                }
+
+            }
+            MatrixString += "]";
+        }
+        MatrixString += " ]";
+        return MatrixString;
+    }
 }

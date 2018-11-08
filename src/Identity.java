@@ -21,4 +21,9 @@ class Identity implements MatrixExpression {
     public MatrixExpression optimize() {
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "I";
+    }
 }

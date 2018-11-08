@@ -27,4 +27,9 @@ class Scalar implements MatrixExpression {
     public MatrixExpression optimize() {
         return this;
     }
+
+    @Override
+    public String toString() {
+        return String.valueOf(value);
+    }
 }
